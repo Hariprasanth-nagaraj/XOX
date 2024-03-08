@@ -1,40 +1,12 @@
 <!DOCTYPE html>
+<html>
 <head>
-    
+<title>OOMBU</title>
 </head>
 <body>
-    <script>
-    let ucount=0;
-        let ccount=0;
-        for(let i=0;i<5;i++){
-            let choice = prompt("Rock Paper scissor");
-            game(choice);
-        }
-        if(ucount>ccount){console.log("you won MF")}
-        else{console.log("you are A FCUKING WASTE!!");}
-        
-        function getComp(){
-            let c = Math.floor(Math.random() * 3);
-            switch(c){
-                case 0:
-                    return "rock";
-                case 1:
-                    return "paper";
-                case 2:
-                    return "scissor";
-            }
-        }
-        function game(choice){
-            let u = choice.toLowerCase();
-            let c = getComp();
-            if(c==u){console.log("its a tie");}
-            else if(u=="rock" && c=="paper"){console.log("computer wins");ccount++;}
-            else if(u=="rock" && c=="scissor"){console.log("YOU win");ucount++;}
-            else if(u=="paper" && c=="rock"){console.log("YOU win");ucount++;}
-            else if(u=="paper" && c=="scissor"){console.log("computer wins");ccount++;}
-            else if(u=="scissor" && c=="rock"){console.log("computer wins");ccount++;}
-            else if(u=="scissor" && c=="paper"){console.log("YOU win");ucount++;}
-        }
-        
-    </script>
+
+    <script src="script.js" defer></script>
+    <div id="btns">
+    </div>
 </body>
+</html>
