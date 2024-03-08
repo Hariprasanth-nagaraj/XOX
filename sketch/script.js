@@ -1,5 +1,5 @@
 const container = document.querySelector('#container');
-let n = prompt("enter the grid size");
+let n = 100;
 for(let i=0;i<n;i++){
     const column = document.createElement('div');
     column.classList.add('columns');
